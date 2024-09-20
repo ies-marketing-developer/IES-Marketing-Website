@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: white;
+}
+
+
+
+
+
+/* syle scrool  bar  */
+/* Apply to the element with the scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar width */
+  }
+  
+  /* Style the scrollbar track (the background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #fff1e1; /* Light background color for the track */
+    border-radius: 8px; /* Rounded corners for the scrollbar track */
+  }
+  
+  /* Style the scrollbar thumb (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: #3c3c3c; /* Dark color for the thumb */
+    border-radius: 8px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  /* Style the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black; /* Slightly lighter black for hover effect */
+  }
+  
+  /* Add a smooth transition to the scrollbar thumb */
+  .scroll-container {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: black #fff1e1; /* For Firefox */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    transition: background 0.5s ease; /* Smooth transition for color change */
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    transition: background 0.5s ease; /* Optional: Smooth transition for track (if needed) */
+  }
+  
